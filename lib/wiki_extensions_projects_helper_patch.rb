@@ -32,4 +32,5 @@ module ProjectsHelperMethodsWikiExtensions
   end
 end
 
-ProjectsHelper.prepend(ProjectsHelperMethodsWikiExtensions)
+# ProjectsHelper.prepend(ProjectsHelperMethodsWikiExtensions)
+ProjectsController.send :helper, ProjectsHelperMethodsWikiExtensions
